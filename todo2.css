@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+.todo-title{
+    background: linear-gradient(to right,rgb(136, 219, 255), rgba(22, 159, 218, 0.63));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 45px;
+    
+    margin-bottom: 20px;
+}
+.todo-container {
+    background-color: #fff;
+    padding: 20px;  
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    flex-grow: 1;
+}
+
+button {
+    padding: 8px;
+    background-color:rgb(22, 159, 218);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color:rgba(22, 159, 218, 0.63);
+}
+.task.done {
+    text-decoration: line-through;
+    color: #888; /* or any other styling for completed tasks */
+}
